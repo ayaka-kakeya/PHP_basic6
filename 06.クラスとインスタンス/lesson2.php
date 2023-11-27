@@ -36,11 +36,9 @@ class Patient extends Person{
     private float $height;
     
     private float $weight;
-    
+
     function __construct($name,$age,$gender,$height,$weight){
-        $this->name=$name;
-        $this->age=$age;
-        $this->gender=$gender;
+        parent::__construct($name,$age,$gender);
         $this->height=$height;
         $this->weight=$weight;
     }
